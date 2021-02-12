@@ -6,58 +6,59 @@
     <title>Document</title>
     <style>
         .container {
+            background-color: #363434;
             display: flex;
-           width: 400px;
-           flex-direction: column;
-            background-color: #FC85AE;
-            border-radius: 10px 10px;
+            flex-direction: column;
+            border-radius: 5px 5px;
         }
-        .pink {
-           
+        .header {
             text-align: center;
-            height: 267px ;
-            font-size: 30px;
-           
-           
-        }
-        .img1 {
-                width: 400px;
-                border-radius: 10px 10px 0 0;
-        }
-            
-            
-        
-        .button {
-            background-color: #574B90;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            height: 70px;
-            font-size: 30px;
-            text-align: center;
-            text-decoration: none;
-            
-            
             color: white;
-            text-align: center;
-    align-items: flex-start;
-
+            font-size: 30px;
+            font-weight: bold;
+            padding: 40px;
         }
-
-        
+        .firstblock {
+            background-color: white;
+            display: flex;
+        }
+        .firsttext {
+            padding: 40px;
+        }
+        .secondblock {
+            background-color: #FD0054;
+            display: flex;
+        }
+        .secondtext {
+            padding: 40px;
+            color: white;
+        }
+        .footer {
+            display: flex;
+        }
+        .button {
+            background-color: yellow;
+        }
     </style>
-
 </head>
 <body>
     <div class="container">
-        <div class="img">
-            <img class=img1 src="lesson_6.jpg"  alt="beard">
+        <div class="header">
+            Название
         </div>
-        <div class="pink">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit adipisci quo odio <br> sunt eius veritatis at <br> quisquam ad dolor.</p>
+        <div class="firstblock">
+            
+            <img src="img1.jpg" alt="">
+            <p class="firsttext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sapiente quo iste sequi? Soluta atque impedit facilis eos, voluptatem tempora. Totam nobis error distinctio et nemo, hic illo libero quam.</p>
         </div>
-        <div class="button">
-            <button>Learn more<button>
+        <div class="secondblock">
+            <p class="secondtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores provident labore nesciunt ex repudiandae quas veritatis, unde enim dolore magnam minus consequatur voluptates quidem neque soluta quod voluptas, nisi tenetur!</p>
+            <img src="img2.jpg" alt="">
         </div>
+        <div class="footer">
+            <button class="button">Кнопка</button>
+        </div>
+
     </div>
 </body>
 </html>

@@ -5,60 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
         .container {
-            background-color: #363434;
+            display: flex;
+            height: 100vh;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .column1, .column2, .column3 {
+            
+            border: 1px solid green;
+            
+        }
+        .column1 {
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+        }
+        .column2 {
+            width: 35%;
+           
+        }
+        .column3 {
+            width: 45%;
+        }
+        .navigation {
             display: flex;
             flex-direction: column;
-            border-radius: 5px 5px;
+            justify-content: center;
+            align-items: center;
+            
         }
-        .header {
-            text-align: center;
-            color: white;
-            font-size: 30px;
-            font-weight: bold;
-            padding: 40px;
-        }
-        .firstblock {
-            background-color: white;
-            display: flex;
-        }
-        .firsttext {
-            padding: 40px;
-        }
-        .secondblock {
-            background-color: #FD0054;
-            display: flex;
-        }
-        .secondtext {
-            padding: 40px;
-            color: white;
-        }
-        .footer {
-            display: flex;
+        .name {
+           
         }
         .button {
-            background-color: yellow;
+            margin-bottom: 100%;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            Название
-        </div>
-        <div class="firstblock">
-            
-            <img src="img1.jpg" alt="">
-            <p class="firsttext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sapiente quo iste sequi? Soluta atque impedit facilis eos, voluptatem tempora. Totam nobis error distinctio et nemo, hic illo libero quam.</p>
-        </div>
-        <div class="secondblock">
-            <p class="secondtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores provident labore nesciunt ex repudiandae quas veritatis, unde enim dolore magnam minus consequatur voluptates quidem neque soluta quod voluptas, nisi tenetur!</p>
-            <img src="img2.jpg" alt="">
-        </div>
-        <div class="footer">
-            <button class="button">Кнопка</button>
-        </div>
+        <div class="column1">
+            <div class="name">
+                <button>Название сайта</button>
+            </div>
+            <div class="navigation">
+                <button class="button">Навигация по разделам</button>
+                <button class="button">Навигация по разделам</button>
+                <button class="button">Навигация по разделам</button>
+                <button>Навигация по разделам</button>
+            </div>
 
+            
+        </div>
+        
+        <div class="column2">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt, neque quas eligendi nemo maxime tempore sit iste id vero ad quo dolore nam possimus placeat velit quibusdam, voluptate non. Accusantium voluptates iure earum inventore officia voluptas vero? Fuga ipsum quibusdam repellat laboriosam corporis amet vel optio, quisquam a error facere libero possimus soluta sequi! Iusto est aliquam fuga illum!</span>
+            <img src="img1.jpg" width="100%" height="15%" alt="">
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique ea officia nobis consequuntur quod eveniet laboriosam. Laudantium consequuntur porro labore quam eaque molestiae dolor quisquam animi neque at omnis aliquam nam laborum minus harum assumenda eligendi, repudiandae mollitia unde ad quis, iusto id quaerat! Repellat qui maxime sed reprehenderit repudiandae inventore! Numquam beatae voluptas a odio quibusdam natus quasi culpa minus. Harum ipsa labore, totam quo obcaecati, adipisci inventore voluptatibus culpa saepe tempora veniam sit corrupti quae suscipit enim. Similique eum minima impedit cumque recusandae blanditiis necessitatibus vero repellat quis, ipsum explicabo eveniet, illo optio tempore laudantium voluptatem, neque tempora nemo praesentium illum veniam fugit? Magnam, soluta! Sit veritatis architecto vero quod totam! A corporis ex sequi explicabo saepe quod sapiente iure alias nihil blanditiis vitae nobis nemo at et nesciunt reprehenderit unde eum, libero est. Iusto nisi quibusdam id! Tempore, quos reprehenderit laborum voluptates id ea ab fugit necessitatibus minus iste asperiores quod impedit quis, inventore beatae temporibus ullam, natus cum. Nisi nam delectus inventore quibusdam perferendis commodi a maxime! Cum, aliquam architecto exercitationem iusto dignissimos quas maiores in dolorum ullam necessitatibus doloremque nisi ea repudiandae nihil. Perferendis quaerat eos eaque quo quia. Iusto asperiores obcaecati quam doloribus placeat!</span>
+        </div>
+        <div class="column3">
+            <img src="img1.jpg" width="100%" height="67%" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, accusantium atque aperiam ut alias, numquam odio minus beatae cum obcaecati vitae in! Aliquid eaque dolor fugiat excepturi nulla vero, corporis possimus soluta laborum cupiditate rem esse praesentium nostrum quisquam exercitationem aspernatur non facilis beatae, odit qui. Voluptate, provident. Id officiis quasi at nobis? Doloremque, expedita? Neque, ullam nihil molestias totam asperiores illo cupiditate necessitatibus doloribus? Omnis neque facere error necessitatibus sint laudantium soluta suscipit aut, eveniet vero amet pariatur aliquam!</p>
+
+        </div>
     </div>
 </body>
 </html>

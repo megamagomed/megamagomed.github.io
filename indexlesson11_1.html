@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            background-color: blue;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            
+            height: 100vh;
+        }
+        .news, .pictures, .information {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 10%;
+            padding: 2em;
+            color: cornsilk;
+            font-weight: bold;
+            font-size: 2em;
+            transition: all ease 0.5s;
+            
+            
+        }
+
+        .news {
+            background-color: black;
+            
+
+        }
+        .news:hover {
+            width: 15%;
+        }
+
+        .pictures {
+            background-color: rgb(194, 119, 22);
+        }
+        .pictures:hover {
+            width: 15%;
+        }
+        .information {
+            background-color: yellow;
+        }
+        .information:hover {
+            width: 15%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="news">
+            <p>Новости</p>
+        </div>
+        <div class="pictures">
+            <p>Картинки</p>
+        </div>
+        <div class="information">
+            <p> Информация</p>
+        </div>
+    </div>
+</body>
+</html>

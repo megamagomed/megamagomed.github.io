@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.56fr 0.17fr 0.83fr;
+    grid-template-rows: 1fr 1fr 1.5fr 0.34fr 0.16fr;
+}
+.img1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(2529793.jpg);
+    background-position: center;
+}
+nav {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #581B98;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.myportfolio {
+    font-family: Pacifico;
+    font-size: 45px;
+    color: white;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    width: 200px;
+}
+.home, .about {
+    font-size: 35;
+    color: white;
+    font-family: Pacifico;
+}
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.line {
+    width: 58px;
+    background-color: white;
+    
+    height: 1px;
+}
+
+.personal {
+    background-color: #F4FA9C;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Oi;
+    font-size:45px;
+    color: #FF304F;
+}
+
+._life_ {
+    background-color: #F4FA9C;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Oi;
+    font-size:45px;
+    color: #64ADD4;
+}
+.line1, .line2 {
+    width: 50px;
+    height: 10px;
+    background-color: #64ADD4;
+    margin: 10px;
+}
+.text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    font-family: Pacifico;
+    font-size: 35;
+    padding: 100px 50px;
+}
+.expression {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-family: Oi;
+    font-size:45px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    align-items: center;
+    padding-right: 10px;
+    color: #FF304F;
+    
+}
+.img2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-image: url("2542509.jpg");
+    background-position: center;
+}

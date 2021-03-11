@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #3B4C41;
+    padding: 46px;
+}
+.container  {
+    background-color: #FFFAF1;
+    display: flex;
+    height: 100vh;
+    
+    
+}
+.right {
+    width: 50%;
+    background-image: url("img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.evilfood {
+    font-family: Merriweather Sans;
+    
+}
+nav {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+a {
+    text-decoration: none;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+
+}
+h1 {
+    font-family: Merriweather Sans;
+    margin: 0;
+    font-size: 80px;
+    color: #423D42
+}
+.junk {
+    color: #F87C41;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.text, footer, .subscribe {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+footer {
+    color: #A39F9C
+}
+p, footer {
+    font-size: 25px;
+}
+.lastrow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

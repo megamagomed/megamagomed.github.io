@@ -1,0 +1,78 @@
+.section-header {
+    height: 100vh;
+
+    &-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        @include media('<=tablet') {
+            flex-direction: row-reverse;
+
+        }
+
+        .herobox {
+            width: 35%;
+            &__title {
+                h2 {
+                    font-family: $segoe;
+                    font-size: 30px;
+                    color: $sea-color;
+
+                }
+                h1 {
+                    font-size: 45px;
+                    color: $dark-color;  
+                    padding: 20px 0; 
+                }
+            }
+            &__subtitle {
+                margin-bottom: 20px; 
+                @include media('<=tablet') {
+                    margin-bottom: 46px;
+                    line-height: 35px;
+                    font-size: 20px;
+                }
+                h2 {
+                    font-family: $segoe;
+                    font-size: 25px;
+                    color: $sea-color;
+                    line-height: 44px;
+                }
+            }
+            &__calltoaction {
+                @include media('<=tablet') {
+                 text-align: center; 
+                }
+
+                button {
+                    background-color: $dark-color;
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 10px 40px;
+                    border: 0;
+                    border-radius: 5px;
+                    @include media('<=tablet') {
+                        padding: 13px 25px;
+                       
+
+                    }
+            
+
+                }
+            }
+        }
+        &__image {
+            width: 50%;
+            height: 50%;
+            background-image: url('../img/header.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+

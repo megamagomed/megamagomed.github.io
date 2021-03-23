@@ -1,0 +1,44 @@
+.section-contact {
+    margin-bottom: 130px;
+
+    &-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+
+        &__title {
+            font-size: 40px;
+            color: $dark-color;
+            margin-bottom: 50px;
+        }
+
+        &__form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-input {
+                input {
+                    background-color: $lightblue-color;
+                    border: 0;
+                    padding: 17px 190px 17px 20px;
+                    border-radius: 5px 0 0 5px;
+                }
+            }
+            &-button {
+                input {
+                    background-color: $emerald-color;
+                    border: 0;
+                    padding: 20px 27px;
+                    font-size: 10px;
+                    color: #fff;
+                    font-weight: bold;
+                    border-radius: 0 5px 5px 0;
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.section-ability {
+    margin-bottom: 150px;
+
+    &-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        @include media ('<=tablet') {
+           margin-top: 100px;
+        }
+
+
+        &__title {
+            h3 {
+                font-size: 40px;
+                color: $dark-color;
+                margin-bottom: 50px;
+            }
+        }
+        
+        .icons {
+            display: flex;
+            &__html, &__css, &__js {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: $emerald-color;
+                position: relative;
+                margin: 0 62.5px;
+                @include media ('<=tablet') {
+                    width: 138px;
+                    height: 138px;
+                }
+
+                h5 {
+                    color: $lightblue-color;
+                    font-size: 18px;
+                    z-index: 2;
+                }
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    background-color: $dark-color;
+                    z-index: 1;
+                    @include media ('<=tablet') {
+                        width: 95px;
+                        height: 95px;
+                    }
+    
+                }
+                &::after {
+                    content: '';
+                    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+                    background-color: $lightblue-color;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include media ('<=tablet') {
+                        width: 138px;
+                        height: 138px;
+                    }
+    
+                }
+            }
+        }
+    }
+}

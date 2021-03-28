@@ -1,6 +1,11 @@
 .section-contact {
     margin-bottom: 130px;
-
+    @include media ('<=tablet'){
+        margin-bottom: 80px;
+    }
+    @include media ('<=phone'){
+        margin-bottom: 105px;
+    }
     &-wrapper {
         height: 100%;
         display: flex;
@@ -13,6 +18,14 @@
             font-size: 40px;
             color: $dark-color;
             margin-bottom: 50px;
+            @include media ('<=tablet'){
+                font-size: 25px;
+            }
+            @include media ('<=phone'){
+                font-size: 12px;
+            }
+
+
         }
 
         &__form {
@@ -25,6 +38,10 @@
                     border: 0;
                     padding: 17px 190px 17px 20px;
                     border-radius: 5px 0 0 5px;
+                    @include media ('<=phone'){
+                        padding: 17px 100px 17px 10px;
+                    }
+        
                 }
             }
             &-button {

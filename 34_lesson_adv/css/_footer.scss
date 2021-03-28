@@ -13,6 +13,14 @@
             font-size: 30px;
             color: $dark-color;
             margin-bottom: 15px;
+            @include media("<=tablet") {
+                margin-bottom: 27px;
+                font-size: 25px;
+            }
+            @include media("<=phone") {
+                margin-bottom: 25px;
+                font-size: 12px;
+            }
         }
 
         &-social {
@@ -26,6 +34,10 @@
                 margin: 10px;
                 background-size: cover;
                 background-position: center;
+                @include media("<=tablet") {
+                    width: 35px;
+                    height: 35px;
+                }
                 a {
                     height: 100%;
                     width: 100%;

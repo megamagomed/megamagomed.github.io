@@ -17,18 +17,39 @@
                 text-decoration: none;
                 font-size: 22px;
             }
+            
         }
         
         .links {
             display: flex;
+            @include media('<=phone') {
+                .menu-hamburger {
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                &__button {
+                   div {
+                       background-color: #fff;
+                       width: 30px;
+                       height: 2px;
+                       margin: 4px;
+                        }
+                    }
+                }
+            }
             
             &__link {
+                
                 a {
                     font-family: $arial;
                     color: #fff;
                     text-decoration: none;
                     font-size: 16px;
                     margin: 0 12.5px;
+                    
+                }
+                @include media('<=phone') {
+                    display: none;
                 }
             }
         }

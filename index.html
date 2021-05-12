@@ -10,36 +10,100 @@
 
 <body>
     <script>
-        /*let input1 = prompt('Введите первое число:');
-        let input2 = prompt('Введите второе число:');
-            if (input1 + input2 > 1000) {
+        // let arr = [7, 12, 42, 66, 56, 1, 122, 5];
+        // let max = arr[0];
+        // let min = arr[0];
+        // for (i = 0; i < arr.length; i++) {
+        //     if (arr[i] >= max) {
+        //         max = arr[i];
+        //     }
+        //     if (arr[i] <= min) {
+        //         min = arr[i];
+        //     }
+        // }
+        // console.log(max);
+        // console.log(min);
 
-                alert("Сумма этих чисел:" + (input1 + input2));
-            } else {
-                alert("Произведение этих чисел:" + (input1 * input2));
-            }*/
+        // let a = prompt();
+        // let b = +a;
+        // console.log(b)
+        // let c = 0;
+        // for (let i = b; i > 0; i--) {
+        //     c = c + i;
+        // }
 
-        /*let input3 = prompt('Введите имя персонажа и мы проверим подходит ли оно вам:');
-            if (input3.length >= 11) {
-                alert('Оно слишком длинное, попробуйте ввести меньше, чем 11 символов');
-            } else if (input3.length >= 1 && input3.length <= 3) {
-                alert('Оно слишком короткое, попробуйте ввести больше чем 3 символа');
-            } else if (input3.length >= 4 && input3.length <= 6) {
-                alert(input3 + ' - это имя идеально вам подходит');
-            } else if (input3.length == 0) {
-                alert('Вы не ввели имя');
-            }*/
+        // console.log(c);
 
-            let input4 = prompt('Странный дождь порой идет: сотней струй он кверху бьет. Ваш ответ:')
-            if (input4 == 'фонтан') {
-                alert('правильный ответ');
-            } else {
-                alert('неправильный ответ');
+        // let a = prompt();
+        // let b = +a;
+        // console.log(b);
+        // let c = [];
+        // c[0] = "x";
+        // for (i = 1; i < b; i++) {
+        //     c[i] = "_"
+        // }
+
+        // for (i = 1; i <= b; i++) {
+        //     console.log(c.join(" "));
+        //     c[i - 1] = "_";
+        //     c[i] = "x";
+        // }
+
+
+
+        // let input = +prompt()
+
+        // let arr = []
+
+        // for (let i = 0; i < input; i++) {
+        //     arr.push('_')
+        // }
+
+        // for (let i = 0; i < arr.length; i++) {
+        //     arr[i] = 'X'
+        //     arr[arr.length - 1 - i] = 'X'
+        //     if (i != 0) {
+        //         arr[i - 1] = '_'
+        //         arr[arr.length - i] = '_'
+        //     }
+        //     if (i == arr.length - i) {
+        //         arr[i - 1] = 'x'
+        //         arr[arr.length - i] = 'x'
+        //     }
+        //     console.log(arr.join());
+        // }
+
+        let input = +prompt()
+
+        let arr = []
+
+        for (let i = 0; i < input; i++) {
+            arr.push('_')
+        }
+
+        for (let i = 0; i < input; i++) {
+            for (let b = 0; b < input; b++) {
+                if (i == 0) {
+                    arr[b] = "X";
+                }
+                if (i != 0) {
+                    arr[b] = "_";
+                    arr[0] = "X";
+                }
+
+                if (i == input - 1) {
+                    arr[b] = "Х";
+                }
+
             }
 
-            x = 10;
-            y = 5;
-            alert(x<y);
+            console.log(arr.join());
+        }
+
+
+
+
+
     </script>
 </body>
 

@@ -10,95 +10,79 @@
 
 <body>
     <script>
-        // let arr = [7, 12, 42, 66, 56, 1, 122, 5];
-        // let max = arr[0];
-        // let min = arr[0];
-        // for (i = 0; i < arr.length; i++) {
-        //     if (arr[i] >= max) {
-        //         max = arr[i];
+        // // Find the first non-consecutive number
+        // function firstNonConsecutive(num) {
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (num[i + 1] - num[i] > 1) {
+        //             return num[i + 1];
+        //         }
         //     }
-        //     if (arr[i] <= min) {
-        //         min = arr[i];
+        //     return null;
+        // }
+        // let arr = [-4, -2, -1, 1, 2, 3, 4, 6, 7, 8]
+        // console.log(firstNonConsecutive(arr));
+
+
+        // Multiplication table for number
+        //     НЕ СМОГ!!!
+        // function multiTable(number) {
+        //     for (let i = 1; i < 11; i++) {
+        //         console.log(i + " * " + number + " = " + i * number);
         //     }
         // }
-        // console.log(max);
-        // console.log(min);
+        // let input = +prompt("number");
+        // multiTable(input)
 
-        // let a = prompt();
-        // let b = +a;
-        // console.log(b)
-        // let c = 0;
-        // for (let i = b; i > 0; i--) {
-        //     c = c + i;
+
+        // Returning Strings
+        // function greet(name) {
+        //     return "Hello, " + name + " how are you doing today?"
         // }
+        // let input = prompt("name");
+        // console.log(greet(input));
 
-        // console.log(c);
-
-        // let a = prompt();
-        // let b = +a;
-        // console.log(b);
-        // let c = [];
-        // c[0] = "x";
-        // for (i = 1; i < b; i++) {
-        //     c[i] = "_"
+        // Sum The Strings
+        // function sumStr(a, b) {
+        //     return String(parseInt(a) + parseInt(b));
         // }
+        // let inputA = prompt("a");
+        // let inputB = prompt("b");
+        // alert(sumStr(inputA, inputB));
 
-        // for (i = 1; i <= b; i++) {
-        //     console.log(c.join(" "));
-        //     c[i - 1] = "_";
-        //     c[i] = "x";
-        // }
-
-
-
-        // let input = +prompt()
-
-        // let arr = []
-
-        // for (let i = 0; i < input; i++) {
-        //     arr.push('_')
-        // }
-
-        // for (let i = 0; i < arr.length; i++) {
-        //     arr[i] = 'X'
-        //     arr[arr.length - 1 - i] = 'X'
-        //     if (i != 0) {
-        //         arr[i - 1] = '_'
-        //         arr[arr.length - i] = '_'
-        //     }
-        //     if (i == arr.length - i) {
-        //         arr[i - 1] = 'x'
-        //         arr[arr.length - i] = 'x'
-        //     }
-        //     console.log(arr.join());
-        // }
-
-        let input = +prompt()
-
-        let arr = []
-
-        for (let i = 0; i < input; i++) {
-            arr.push('_')
-        }
-
-        for (let i = 0; i < input; i++) {
-            for (let b = 0; b < input; b++) {
-                if (i == 0) {
-                    arr[b] = "X";
+        // Chess Fun
+        function chessKnight(cell) {
+            if (cell[1] >= '3' && cell[1] <= '6') {
+                if (cell[0] == 'a' || cell[0] == 'h') {
+                    return 4
                 }
-                if (i != 0) {
-                    arr[b] = "_";
-                    arr[0] = "X";
+                if (cell[0] == 'b' || cell[0] == 'g') {
+                    return 6
                 }
-
-                if (i == input - 1) {
-                    arr[b] = "Х";
+                return 8
+            }
+            if (cell[1] == 1 || cell[1] == 8) {
+                if (cell[0] == 'a' || cell[0] == 'h') {
+                    return 2
                 }
-
+                if (cell[0] == 'b' || cell[0] == 'g') {
+                    return 3
+                }
+                return 4
+            }
+            if (cell[1] == 2 || cell[1] == 7) {
+                if (cell[0] == 'a' || cell[0] == 'h') {
+                    return 3
+                }
+                if (cell[0] == 'b' || cell[0] == 'g') {
+                    return 4
+                }
+                return 6
             }
 
-            console.log(arr.join());
         }
+
+
+
 
 
 
